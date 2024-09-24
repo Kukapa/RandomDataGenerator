@@ -1,0 +1,38 @@
+[
+  {
+    "ContainingType": "RandomDataGenerator.Controllers.UserController",
+    "Method": "GetPersons",
+    "RelativePath": "api/persons",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "seed",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "errorProb",
+        "Type": "System.Double",
+        "IsRequired": false
+      },
+      {
+        "Name": "locale",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "size",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

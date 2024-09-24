@@ -1,0 +1,53 @@
+﻿﻿@{
+    ViewData["Title"] = "RandomDataGenerator";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/font/bootstrap-icons.min.css" />
+}
+
+<div class="input-group mb-3">
+    <span class="input-group-text" id="seed-descr">Seed</span>
+    <input value="0" id="seed" type="number" class="form-control" placeholder="Enter a seed" aria-label="Enter a seed" aria-describedby="seed-descr">
+    <button id="generate_seed" class="btn btn-outline-primary">Сгенерировать</button>
+</div>
+
+<div class="input-group mb-3">
+    <label class="input-group-text" for="loc-select">Регион</label>
+    <select class="form-select" id="loc-select" asp-items="ViewBag.LocaleList">
+    </select>
+</div>
+
+<div class="row g-3">
+    <label for="err-range" class="form-label">Количество ошибок</label>
+    <div class="col">
+        <input type="range" class="form-range" value="0" min="0" max="10" step="0.25" id="err-range" />
+    </div>
+    <div class="col-auto">
+        <input type="number" class="form-control" value="0" min="0" max="1000" id="err-input" />
+    </div>
+</div>
+<div class="d-flex justify-content-between mb-3">
+    <div>
+        <button id="generate_csv" class="btn btn-secondary">Экспортировать в CSV<i class="bi bi-filetype-csv"></i></button>
+    </div>
+</div>
+<div class="table-responsive overflow-x-auto">
+    <table class="table table-bordered table-striped text-center" id="main-table">
+        <thead>
+            <tr>
+                <th>Номер</th>
+                <th>Случайный идентификатор</th>
+                <th>ФИО</th>
+                <th>Адрес</th>
+                <th>Номер телефона</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+</div>
+
+@section Scripts {
+    <script src="~/js/site.js" asp-append-version="true"></script>
+}

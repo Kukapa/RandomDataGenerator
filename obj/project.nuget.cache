@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "LFY+rpq/SfI=",
+  "success": true,
+  "projectFilePath": "E:\\projects\\RandomDataGenerator\\RandomDataGenerator.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Asus\\.nuget\\packages\\bogus\\35.6.1\\bogus.35.6.1.nupkg.sha512"
+  ],
+  "logs": []
+}
